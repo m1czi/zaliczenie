@@ -1,0 +1,47 @@
+@font-face {   font-family: 'font';   
+    src: url('Jersey Sharp.ttf') format('truetype'); 
+}
+
+body{
+    font-family:"arial" ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.intro{
+    display: flex;
+    color: black;
+    height: 100vh;
+    background-image: url("f1banner.jpg");
+    background-size: cover;
+    font-size: 30px;
+ 
+}
+
+.typing{
+    position: relative;
+    margin-left: 20px;
+    margin-top: 45px;
+    color: chartreuse;
+    font-family: "font";
+}
+
+.typing::after{
+    content: "";
+    position: absolute;
+    right: -10px;
+    width: 7px;
+    height: 7%;
+    border-right: 3px solid chartreuse;
+    animation: blink 0.6s infinite ease ;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
