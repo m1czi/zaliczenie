@@ -1,58 +1,68 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
 
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    height: 98vh;
+    grid-template-areas:
+      "slide timer"
+      "type name";
+   
+      background-color: blue;
 }
 
-.carousel-container{
-    width: 262px;
-    height: 260px;
-    margin: auto;
-    border: 5px solid black;
-    overflow: hidden;
-    position: relative;
-    background-color: purple;
-}
 
-.carousel-slide{
+
+.slide{
+
+    grid-area: slide;
+
     display: flex;
-    
-    width: 100%;
-    height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  font-size: 100px;
+  margin: 5px;
+  
 }
 
-.background{
-    background-image: url("images/home-banner.jpg");
-    height: 937px;
+.timer{
+
+    grid-area: timer;
+
     display: flex;
-    justify-content: center;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: green;
+  margin: 5px;
+ 
+}
+
+.type{
+
+    grid-area: type;
     
-}
 
-.nazwa{
-  position: absolute;
- font-size: 100px;
- color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  font-size: 100px;
+  margin: 5px;
+  
 }
+.name{
 
-#prevBtn{
-    position: absolute;
-    top: 45%;
-    z-index: 10;
-    left: 5%;
-    font-size: 30px;
-    color: wheat;
-    cursor: pointer;
+    grid-area: name;
     
+
+    display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: red;
+  margin: 5px;
+ 
 }
 
-#nextBtn{
-    position: absolute;
-    top: 45%;
-    z-index: 10;
-    right: 5%;
-    font-size: 30px;
-    color: wheat;
-    cursor: pointer;
-}
+
