@@ -27,9 +27,9 @@
   
 }
 
-.timer{
+.theme{
 
-    grid-area: timer;
+    grid-area: theme;
 
     display: flex;
   justify-content: center;
