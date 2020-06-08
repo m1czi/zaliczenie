@@ -7,7 +7,7 @@
     height: 98vh;
     grid-template-areas:
       "slide theme"
-      "type name";
+      "type zegar";
    
       background-color: blue;
 }
@@ -53,17 +53,17 @@
   margin: 5px;
   
 }
-.name{
-
-    grid-area: name;
-    
-
-   display: flex;
+.zegar{
+	
+	grid-area: zegar;
+	
+  display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   background-color: red;
+  font-size: 100px;
   margin: 5px;
- 
+  
 }
 
 

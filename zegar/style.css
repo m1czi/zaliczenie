@@ -1,0 +1,31 @@
+.container {
+   
+      background-image: url(ny.jpg);
+      height: 98vh;
+      display: flex;
+      justify-content: center;
+      font-size: 60px;
+}
+
+.top{
+
+    font-family: arial;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    color: yellow;
+    height: 20vh;
+
+}
+
+
+
+.zegar{
+	font-family: arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;  
+    font-size: 150px;
+     
+    }
