@@ -6,7 +6,7 @@
     grid-template-rows: 50% 50%;
     height: 98vh;
     grid-template-areas:
-      "slide timer"
+      "slide theme"
       "type name";
    
       background-color: blue;
@@ -18,7 +18,7 @@
 
     grid-area: slide;
 
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: orange;
@@ -31,10 +31,11 @@
 
     grid-area: theme;
 
-    display: flex;
+   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   background-color: green;
+  font-size: 100px;
   margin: 5px;
  
 }
@@ -57,7 +58,7 @@
     grid-area: name;
     
 
-    display: flex;
+   display: flex;
   justify-content: center;
   align-items: flex-start;
   background-color: red;
